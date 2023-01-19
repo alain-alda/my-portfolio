@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+:root {
+  --main-color: #ffc107;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utility */
 .center {
   display: block;
   margin-left: auto;
@@ -5,14 +26,7 @@
   width: 50%;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-#testimonials {
-  background: url(img/yellow.jpg);
-}
-
+/* Hero Section */
 .hero {
   background: url(img/hero.jpg) no-repeat center center/cover;
   height: 100vh;
@@ -35,14 +49,21 @@ html {
 }
 
 .navbar .links li a:hover {
-  color: #ffc107;
+  color: var(--main-color);
 }
 
+/* Skill */
+#skills .card:hover {
+  background-color: #333;
+  color: var(--main-color);
+}
+
+/* Contact US */
 #contact-us {
   background: url(img/contactus-bg.jpg) no-repeat center center/cover;
 }
 
-#skills .card:hover {
-  background-color: #333;
-  color: #ffc107;
+/* Testimonials */
+#testimonials {
+  background: url(img/yellow.jpg) no-repeat center center/cover;
 }
