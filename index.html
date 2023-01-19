@@ -9,6 +9,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <style></style>
+
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -17,6 +19,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script
       src="https://kit.fontawesome.com/35ef6ff2cd.js"
@@ -29,7 +33,7 @@
     <header>
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href=""
             ><span class="text-warning">Alain</span> Alda
           </a>
           <button
@@ -42,11 +46,11 @@
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ms-auto mx-5 links">
-              <li class="nav-item mx-3">
+              <li class="nav-item">
                 <a class="nav-link btn" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link btn" href="#skills">Experience</a>
+                <a class="nav-link btn" href="#skills">My Skills</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link btn" href="#portfolio">Portfolio</a>
@@ -63,12 +67,18 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-6 text-white">
-              <h1 class="mb-2 text-center display-1">I AM</h1>
-              <h1 class="mb-2 text-center display-1">
-                <span class="text-warning">ALAIN</span>
-                ALDA
+              <h1 class="mb-2 text-center display-1" data-aos="fade-down">
+                I AM
               </h1>
-              <p class="mb-4 text-center display-4">A Web Developer.</p>
+              <div data-aos="zoom-in">
+                <h1 class="mb-2 text-center display-1">
+                  <span class="text-warning">ALAIN</span>
+                  ALDA
+                </h1>
+              </div>
+              <p class="mb-4 text-center display-4" data-aos="fade-up">
+                A Web Developer.
+              </p>
             </div>
           </div>
         </div>
@@ -77,18 +87,18 @@
     <!-- End Header -->
     <main>
       <!-- Start About -->
-      <section id="about" class="mt-5 mb-5">
+      <section id="about" class="mt-3 mb-5">
         <div class="container">
           <h1 class="text-center text-warning mb-4">About Me</h1>
           <div class="card shadow-lg p-3 mb-5 bg-body rounded">
             <div class="row no-gutters">
               <div class="col-lg-4">
-                <img src="img/alain.jpg" class="card-img" alt="image" />
+                <img src="img/alain2.jpg" class="card-img" alt="image" />
               </div>
               <div class="col-lg-8 d-flex align-items-center">
                 <div class="card-body border-5">
-                  <h5 class="card-title text-center">Alain Kangleon Alda</h5>
-                  <div class="socials d-flex justify-content-center gap-2">
+                  <h3 class="card-title text-center">Alain Kangleon Alda</h3>
+                  <div class="socials d-flex justify-content-center gap-2 my-3">
                     <a
                       href="http://twitter.com"
                       target="_blank"
@@ -124,12 +134,13 @@
                       <i class="fab fa-youtube fa-2x text-warning"></i>
                     </a>
                   </div>
-                  <p class="card-text text-center">
-                    <i class="fas fa-map-marker-alt"></i> Tacloban City,
-                    Phillipines
+                  <p class="text-center mb-1">
+                    <i class="fa fa-map-marker-alt text-warning"></i> Tacloban
+                    City, Phillipines
                   </p>
-                  <p class="card-text text-center">
-                    <i class="fas fa-envelope"></i> alain.antisocial@gmail.com
+                  <p class="text-center">
+                    <i class="fa fa-envelope text-warning"></i>
+                    alain.antisocial@gmail.com
                   </p>
                   <p class="card-text p-4 fs-5">
                     As a web developer, I have a strong understanding of
@@ -146,19 +157,19 @@
       </section>
       <!-- End About -->
       <!-- Start Skills -->
-      <section id="skills" class="skills-icons mt-3 mb-5 bg-dark">
+      <section id="skills" class="skills-icons mt-5 bg-dark">
         <div class="container">
           <h1 class="text-center py-4">
             <span class="text-warning">Skills</span>
           </h1>
 
           <div class="row justify-content-center align-items-center g-3 pb-5">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="card">
                 <div class="card-body text-center">
                   <h4 class="card-title mb-3">HTML/CSS Coding</h4>
                   <p class="card-text text-warning">
-                    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+                    <i class="fa-brands fa-html5 fa-3x"></i>
                   </p>
                   <p class="fst-italic">
                     Proficient in markup languages including HTML and CSS.
@@ -168,12 +179,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="card">
                 <div class="card-body text-center">
                   <h4 class="card-title mb-3">Javascript</h4>
                   <p class="card-text text-warning">
-                    <i class="fa-solid fa-computer fa-3x"></i>
+                    <i class="fa-brands fa-js fa-3x"></i>
                   </p>
                   <p class="fst-italic">
                     Excels in frontend web programing languages such as
@@ -184,12 +195,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="card">
                 <div class="card-body text-center">
                   <h4 class="card-title mb-3">Back-end Developer</h4>
                   <p class="card-text text-warning">
-                    <i class="fa-solid fa-teeth-open fa-3x"></i>
+                    <i class="fa-brands fa-node-js fa-3x"></i>
                   </p>
                   <p class="fst-italic">
                     Knowledgeable in backend web programing languages.
@@ -199,12 +210,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="card">
                 <div class="card-body text-center">
                   <h4 class="card-title mb-3">Database Expert</h4>
                   <p class="card-text text-warning">
-                    <i class="fa-solid fa-user-doctor fa-3x"></i>
+                    <i class="fa-solid fa-database fa-3x"></i>
                   </p>
                   <p class="fst-italic">
                     Expert in database crucial for funnctioning sites.
@@ -214,12 +225,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="card">
                 <div class="card-body text-center">
                   <h4 class="card-title mb-3">Visual design</h4>
                   <p class="card-text text-warning">
-                    <i class="fas fa-hand-sparkles fa-3x"></i>
+                    <i class="fa-brands fa-bootstrap fa-3x"></i>
                   </p>
                   <p class="fst-italic">
                     Design software like Photoshop and Microsoft Paint.
@@ -229,12 +240,12 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="card">
                 <div class="card-body text-center">
                   <h4 class="card-title mb-3">User experience (UX)</h4>
                   <p class="card-text text-warning">
-                    <i class="fa-solid fa-face-grimace fa-3x"></i>
+                    <i class="fa-brands fa-react fa-3x"></i>
                   </p>
                   <p class="fst-italic">
                     User experience (UX)-trained by Kodego and Mr. Azur.
@@ -247,46 +258,199 @@
         </div>
       </section>
       <!-- End Skills -->
-      <!--Start Portfolio-->
-      <section id="portfolio" class="mb-4">
-        <h1 class="text-center text-warning mb-5">My Works of Art</h1>
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Start Portfolio-->
+      <section id="portfolio" class="pb-3">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-warning text-center my-4">
+              Websites I've Built...
+            </h1>
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/img/portfolio/hotel3.png"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <div class="card-body text-center">
+                  <h5 class="text-start">Hotel Webpage</h5>
+                  <p class="text-start text-muted">Created in HTML and CSS</p>
+                  <div class="d-flex justify-content-between">
+                    <a
+                      href="https://tangerine-fudge-10389f.netlify.app/"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-solid fa-eye"></i> Preview</a
+                    >
+                    <a
+                      href="https://github.com/alain-alda/hotel-demo"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-brands fa-github"></i> Codes</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/portfolio/kodeledger2.png"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <div class="card-body text-center">
+                  <h5 class="text-start">Financial Institution Webpage</h5>
+                  <p class="text-start text-muted">Created in HTML and CSS</p>
+                  <div class="d-flex justify-content-between">
+                    <a
+                      href="https://aquamarine-taffy-3bbcbe.netlify.app/"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-solid fa-eye"></i> Preview</a
+                    >
+                    <a
+                      href="https://github.com/alain-alda/kodeledger-demo"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-brands fa-github"></i> Codes</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/img/portfolio/koderesto2.png"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <div class="card-body text-center">
+                  <h5 class="text-start">Restuarant Chain Webpage</h5>
+                  <p class="text-start text-muted">Created in HTML and CSS</p>
+                  <div class="d-flex justify-content-between">
+                    <a
+                      href="https://spontaneous-treacle-e7681d.netlify.app/"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-solid fa-eye"></i> Preview</a
+                    >
+                    <a
+                      href="https://github.com/alain-alda/koderesto"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-brands fa-github"></i> Codes</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="img/portfolio/newsgrid2.png"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <div class="card-body text-center">
+                  <h5 class="text-start">News Company Webpage</h5>
+                  <p class="text-start text-muted">Created in HTML and CSS</p>
+                  <div class="d-flex justify-content-between">
+                    <a
+                      href="https://euphonious-cranachan-0abce3.netlify.app/"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-solid fa-eye"></i> Preview</a
+                    >
+                    <a
+                      href="https://github.com/alain-alda/newsgrid-demo"
+                      target="_blank"
+                      class="btn btn-warning my-2"
+                      ><i class="fa-brands fa-github"></i> Codes</a
+                    >
+                  </div>
+                  <!-- <a href="#" class="btn btn-warning my-2"
+                    ><i class="fa-solid fa-eye"></i><br />GitHub</a
+                  > -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ens Portfolio-->
+      <!--Start Testimonials-->
+      <section id="testimonials" class="pb-5">
+        <h1 class="text-center text-dark py-3">What they say about me...</h1>
+        <div id="demo" class="carousel slide my-4" data-bs-ride="carousel">
           <!-- The slideshow/carousel -->
-          <div class="carousel-inner">
+          <div class="carousel-inner container">
             <div class="carousel-item active">
               <img
-                src="img/portfolio/hotel.png"
+                src="img/testimonials/wes2.jpg"
                 alt="hotel webpage"
-                class="d-block"
-                style="width: 100%"
+                class="rounded-circle shadow-1-strong center mb-4"
+                style="width: 150px"
               />
-              <div class="carousel-caption"></div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6">
+                  <h5 class="mb-3 text-center">Welsey Taguinod</h5>
+                  <p class="text-center">Web Deveoper</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    I had the pleasure of working with Alain on a recent
+                    project, and I was extremely impressed with his skills and
+                    dedication. Despite being a starting web developer, he was
+                    able to quickly learn and implement new technologies and
+                    were a valuable asset to our team.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-dark mb-0"
+              >
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="far fa-star fa-sm"></i></li>
+              </ul>
             </div>
             <div class="carousel-item">
               <img
-                src="img/portfolio/kodeledger.png"
+                src="img/testimonials/ronald.jpg"
                 alt="kodeledger"
-                class="d-block"
-                style="width: 100%"
+                class="rounded-circle shadow-1-strong center mb-4"
+                style="width: 150px"
               />
-              <div class="carousel-caption"></div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/portfolio/koderesto.png"
-                alt="koderesto"
-                class="d-block"
-                style="width: 100%"
-              />
-              <div class="carousel-caption"></div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/portfolio/newsgrid.png"
-                alt="newsgrid"
-                class="d-block"
-                style="width: 100%"
-              />
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6">
+                  <h5 class="mb-3 text-center">Ronald Saure</h5>
+                  <p class="text-center">Web Developer</p>
+                  <p class="text-muted">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    I recently had the opportunity to visit the webpage designed
+                    by Alain and I was thoroughly impressed by its simplicity
+                    and functionality. The webpage was well-organized and easy
+                    to navigate, with a clean and modern design. It was a great
+                    user experience and I would recommend it to anyone.
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center mb-0 text-dark"
+              >
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="fas fa-star fa-sm"></i></li>
+                <li><i class="far fa-star fa-sm"></i></li>
+              </ul>
               <div class="carousel-caption"></div>
             </div>
           </div>
@@ -310,19 +474,19 @@
           </button>
         </div>
       </section>
-      <!--End Portfolio-->
+      <!--End Testimonials-->
       <!--Contact Header-->
-      <section id="contact-us" class="mt-5 py-5">
+      <section id="contact-us" class="py-5">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-8 bg-white my-5 border rounded">
-              <h3 class="text-center my-3">
+              <h4 class="text-center my-3 mt-4">
                 Any questions or inquires, just let me know and I'll get back yo
                 you.
-              </h3>
-              <form>
-                <div class="form-group my-2 fs-5">
-                  <label for="name">Name:</label>
+              </h4>
+              <form class="p-3">
+                <div class="form-group my-2">
+                  <label for="name" class="mb-2">Name:</label>
                   <input
                     type="text"
                     class="form-control"
@@ -330,8 +494,8 @@
                     placeholder="Enter your name"
                   />
                 </div>
-                <div class="form-group mb-2 fs-5">
-                  <label for="email">Email</label>
+                <div class="form-group mb-2">
+                  <label for="email" class="mb-2">Email:</label>
                   <input
                     type="email"
                     class="form-control"
@@ -339,8 +503,8 @@
                     placeholder="Enter your email"
                   />
                 </div>
-                <div class="form-group mb-4 fs-5">
-                  <label for="message">Message</label>
+                <div class="form-group mb-4">
+                  <label for="message" class="mb-2">Message:</label>
                   <textarea
                     class="form-control"
                     id="message"
@@ -368,13 +532,15 @@
                 Alda
               </a>
             </div>
-            <p class="card-text text-center">
-              <i class="fas fa-map-marker-alt"></i> Tacloban City, Phillipines
+            <p class="text-center mb-1">
+              <i class="fas fa-map-marker-alt text-warning"></i> Tacloban City,
+              Phillipines
             </p>
-            <p class="card-text text-center">
-              <i class="fas fa-envelope"></i> alain.antisocial@gmail.com
+            <p class="text-center">
+              <i class="fas fa-envelope text-warning"></i>
+              alain.antisocial@gmail.com
             </p>
-            <div class="socials d-flex justify-content-center gap-2">
+            <div class="socials d-flex justify-content-center gap-2 mb-5">
               <a
                 href="http://twitter.com"
                 target="_blank"
@@ -412,28 +578,19 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <h4>Register Your Email</h4>
-            <p class="mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
-              atque? Cumque, delectus.
-            </p>
-            <form class="mt-0" action="">
-              <label class="form-label" for="email"></label>
-              <input
-                class="form-control mb-2"
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Enter Email..."
+          <div class="col-lg-4 col-md-6 my-5">
+            <div
+              class="card d-grid justify-content-center bg-light py-3 container border border-shadow-5"
+            >
+              <h3 class="text-center text-dark">Powered by:</h3>
+              <img
+                src="https://dy9hpnbyn8tl0.cloudfront.net/kodego-large.svg"
+                alt="kodego"
               />
-              <a class="btn btn-warning d-block mb-4" href="" type="submit"
-                >Subscribe</a
-              >
-            </form>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-3">
+          <div class="col-lg-4 col-md-12 mb-3">
             <h4 class="pb-2">SITES LINKS</h4>
             <ul class="list-group">
               <li
@@ -478,5 +635,13 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
   </body>
 </html>
